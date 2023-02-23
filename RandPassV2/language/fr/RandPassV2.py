@@ -45,11 +45,11 @@ def Save():
     # Demander à l'utilisateur pour quel site le mot de passe est destiné
     website = input("Pour quel site souhaitez-vous générer ce mot de passe ? ")
     # Créer un fichier texte pour stocker les mots de passe si le fichier n'existe pas déjà
-    if not os.path.exists("mots_de_passe.txt"):
-        open("mots_de_passe.txt", "w").close()
+    if not os.path.exists("passwords.txt"):
+        open("passwords.txt", "w").close()
 
     # Ajouter une ligne dans le fichier texte contenant le site et le mot de passe
-    with open("mots_de_passe.txt", "a") as f:
+    with open("passwords.txt", "a") as f:
         f.write(f"{website} : {password}\n")
 
 if rep =="O" or rep=="o":
