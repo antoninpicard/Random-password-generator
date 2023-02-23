@@ -1,10 +1,31 @@
 import random
 import string
 
+
+print(" ")
+print(" ")
+print(" ")
+print("     88--Yb    db    88b 88 8888b.  88--Yb    db    .dP-Y8 .dP-Y8")
+print("     88__dP   dPYb   88Yb88  8I  Yb 88__dP   dPYb   `Ybo.- `Ybo.- ")
+print("     88-Yb   dP__Yb  88 Y88  8I  dY 88---   dP__Yb  o.`Y8b o.`Y8b ")
+print("     88  Yb dP----Yb 88  Y8 8888Y-  88     dP----Yb 8bodP- 8bodP-")
+print(" ")
+print(" ")
+print(" ")
+
+
+
+
+
+
 def RandomPS():
     caracteres = string.ascii_letters + string.digits 
     password = ''.join(random.choices(caracteres, k=n)) 
     print("Votre mot de passe est : ", password)
+
+
+
+
 
 # Demander à l'utilisateur la longueur souhaitée du mot de passe
 n = int(input("Entrez le nombre de caractères que vous souhaitez dans votre mot de passe : "))
@@ -57,6 +78,8 @@ elif password_type == "B":
 
 else:
     print("Type de mot de passe invalide. Veuillez entrer L pour les lettres, N pour les chiffres ou B pour les deux.")
+
+
 
 # Générer le mot de passe
 password = ''.join(random.choices(characters, k=n_letters + n_numbers))

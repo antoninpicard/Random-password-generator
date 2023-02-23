@@ -1,6 +1,21 @@
 import random
 import string
 
+
+print(" ")
+print(" ")
+print(" ")
+print("     88--Yb    db    88b 88 8888b.  88--Yb    db    .dP-Y8 .dP-Y8")
+print("     88__dP   dPYb   88Yb88  8I  Yb 88__dP   dPYb   `Ybo.- `Ybo.- ")
+print("     88-Yb   dP__Yb  88 Y88  8I  dY 88---   dP__Yb  o.`Y8b o.`Y8b ")
+print("     88  Yb dP----Yb 88  Y8 8888Y-  88     dP----Yb 8bodP- 8bodP-")
+print(" ")
+print(" ")
+print(" ")
+
+
+
+
 def RandomPS():
     caracteres = string.ascii_letters + string.digits 
     password = ''.join(random.choices(caracteres, k=n)) 
