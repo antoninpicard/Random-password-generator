@@ -2,7 +2,7 @@ import random
 import string
 import os.path
 import tkinter as tk
-
+import pyperclip
 from pystyle import Colors, Colorate
 print(Colorate.Horizontal(Colors.yellow_to_red,"""
  ____________________________________________________________________________________________________________________
@@ -44,7 +44,7 @@ class PasswordGeneratorApp:
     def __init__(self):
         self.window = tk.Tk()
         self.window.title("Générateur de mot de passe")
-        self.window.geometry("400x300")
+        self.window.geometry("400x350")
 
         self.length_label = tk.Label(self.window, text="Longueur du mot de passe :")
         self.length_label.pack(pady=10)
@@ -61,6 +61,9 @@ class PasswordGeneratorApp:
 
         self.password_label = tk.Label(self.window, text="")
         self.password_label.pack(pady=10)
+
+        self.copy_button = tk.Button(self.window, text="Copier", command=self.copy_password)
+        self.copy_button.pack(pady=10)
 
         self.website_label = tk.Label(self.window, text="Site web :")
         self.website_entry = tk.Entry(self.window)
@@ -79,11 +82,16 @@ class PasswordGeneratorApp:
             password = GeneratePasswordLD(length)
 
         self.password_label.config(text=f"Mot de passe généré : {password}")
+        self.copy_button.pack(pady=10)
 
         self.website_label.pack(pady=10)
         self.website_entry.pack()
 
         self.save_button.pack(pady=10)
+
+    def copy_password(self):
+        password = self.password_label.cget("text").split(": ")[1]
+        pyperclip.copy(password)
 
     def save_password(self):
         website = self.website_entry.get()
@@ -91,6 +99,7 @@ class PasswordGeneratorApp:
         save_password(website, password)
         self.website_entry.delete(0, tk.END)
         self.password_label.config(text="")
+        self.copy_button.pack_forget()
         self.website_label.pack_forget()
         self.website_entry.pack_forget()
         self.save_button.pack_forget()
@@ -98,3 +107,4 @@ class PasswordGeneratorApp:
 
 if __name__ == "__main__":
     app = PasswordGeneratorApp()
+
