@@ -1,2 +1,0 @@
-Eel==0.14.0
-PyInstaller>=5.8.0
