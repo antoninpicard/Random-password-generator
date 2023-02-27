@@ -2,7 +2,7 @@
 
 # RandPass
 
-RandPass est un générateur de mot de passe aléatoire pour tout vos sites web.
+RandPass is a random password generator for all your websites.
 
 ## Installation
 
@@ -10,15 +10,15 @@ Before running randpass, you will need to install all packets by executing the "
 
 ## Usage
 
-Pour utiliser RandPass tout d'abord choisissez le mode d'utilisation(CLI (ligne de commande) ou Interface).
+To use RandPass first choose the mode of use (CLI (command line) or Interface).
 
 [![image](https://www.linkpicture.com/q/Capture-d-ecran-2023-02-27-101111.png)](https://www.linkpicture.com/view.php?img=LPic63fc7406ba55d503153160)
 
-Ensuite diriger vous vers votre langue, français ou anglais.
+Then direct you to your language, French or English.
 
 ## Passwords
 
-🚧Les mot de passes que vous enregistré avec un un site web sont enregistré dans un fichiers passwords.txt à l'emplacement de RandPass.py.🚧
+🚧The passwords that you saved with a website are saved in a passwords.txt file at the location of RandPass.py.🚧
 
 
 ## Security
