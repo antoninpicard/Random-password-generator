@@ -2,7 +2,7 @@ import random
 import string
 import os.path
 import tkinter as tk
-import pyperclip
+import pyperclip 
 from pystyle import Colors, Colorate
 print(Colorate.Horizontal(Colors.yellow_to_red,"""
  ____________________________________________________________________________________________________________________
